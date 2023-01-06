@@ -77,7 +77,7 @@ exec_time=dicts['exec_time']
 st.write('fuse_time')
 fuse_time_df = pd.DataFrame({
      'op name': fuse_time_dict['lable'],
-     'time': sorted(fuse_time_dict['value'],reverse=True)
+     'time': fuse_time_dict['value']
      })
 st.dataframe(fuse_time_df, use_container_width=True) 
 # st.write(fuse_time_df)
@@ -91,7 +91,7 @@ st.bar_chart( fuse_time_dict, x='lable', y='value')
 st.write('op_stats')
 op_stats_df = pd.DataFrame({
      'op name': op_stats_dict['lable'],
-     'nums': sorted(op_stats_dict['value'],reverse=True)
+     'nums': op_stats_dict['value']
      })
 st.dataframe(op_stats_df, use_container_width=True) 
 # st.write(op_stats_df)
