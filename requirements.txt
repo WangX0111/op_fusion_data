@@ -1,2 +1,7 @@
 # requirements.txt
-pymongo==4.3.3
+pymongo
+numpy
+altair
+pandas
+matplotlib
+streamlit
