@@ -97,7 +97,7 @@ st.dataframe(op_stats_df, use_container_width=True)
 # st.write(op_stats_df)
 fig, ax = plt.subplots()
 x=op_stats_dict['lable']
-y= sorted(op_stats_dict['value'],reverse=True)
+y= op_stats_dict['value']
 explode = np.zeros(len(y))
 explode[-1] = 0.1
 patches, texts, autotexts = plt.pie(y,
