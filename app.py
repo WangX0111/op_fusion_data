@@ -48,7 +48,7 @@ with st.sidebar.expander("Platform", expanded=True):
 with st.sidebar.expander("Model", expanded=True):
     model_name = st.selectbox(
             "Select a Model",
-            options=['lenet','resnet50-v1-12'],
+            options=['lenet','resnet50-v1-12','bert-large-cased'],
         )
     model='./model/' + model_name + '.onnx'
 
